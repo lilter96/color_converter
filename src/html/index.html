@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB-Hex Converter</title>
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css" />
+    <!-- 'classic' theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/monolith.min.css" />
+    <!-- 'monolith' theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="body">
+    <div class="container">
+        <div class="moon">
+            <div class="crater crater-1"></div>
+            <div class="crater crater-2"></div>
+            <div class="crater crater-3"></div>
+            <div class="crater crater-4"></div>
+            <div class="crater crater-5"></div>
+            <div class="shadow"></div>
+            <div class="eye eye-l"></div>
+            <div class="eye eye-r"></div>
+            <div class="mouth"></div>
+            <div class="blush blush-1"></div>
+            <div class="blush blush-2"></div>
+        </div>
+        <div class="orbit">
+            <div class="rocket">
+                <div class="window"></div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <label for="rgb">RGB</label>
+            <input type="text" id="rgb" oninput="fromRgb()" placeholder="Enter RGB Value">
+        </div>
+        <div class="wrapper">
+            <label for="hex">HEX</label>
+            <input type="text" id="hex" oninput="fromHex()" placeholder="Enter Hex Value">
+        </div>
+        <div class="wrapper">
+            <label for="picker">Color Picker</label>
+            <div class="color_picker">
+                <div class="pickr"></div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <label for="hex">CMYK</label>
+            <input type="text" id="cmyk" oninput="fromCmyk()" placeholder="Enter Cmyk Value">
+        </div>
+        <div class="wrapper">
+            <label for="hex">HSV</label>
+            <input type="text" id="hsv" oninput="fromHsv()" placeholder="Enter Hsv Value">
+        </div>
+
+        <div class="wrapper">
+            <label for="hex">HSL</label>
+            <input type="text" id="hsl" oninput="fromHsl()" placeholder="Enter Hsl Value">
+        </div>
+    </div>
+    <!--Script-->
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.es5.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
